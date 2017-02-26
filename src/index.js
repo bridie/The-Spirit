@@ -20,8 +20,6 @@ var fboHelper = require('./3d/fboHelper');
 var simulator = require('./3d/simulator');
 var particles = require('./3d/particles');
 var lights = require('./3d/lights');
-var floor = require('./3d/floor');
-
 
 var undef;
 var _stats;
@@ -86,10 +84,6 @@ function init() {
 
     lights.init(_renderer);
     _scene.add(lights.mesh);
-
-    floor.init(_renderer);
-    floor.mesh.position.y = -100;
-    _scene.add(floor.mesh);
 
     _control = new OrbitControls( _camera, _renderer.domElement );
     _control.target.y = 50;
@@ -160,10 +154,6 @@ function _render(dt, newTime) {
     motionBlur.skipMatrixUpdate = !(settings.dieSpeed || settings.speed) && settings.motionBlurPause;
 
     _bgColor.setStyle(settings.bgColor);
-    var tmpColor = floor.mesh.material.color;
-    tmpColor.lerp(_bgColor, 0.05);
-    _scene.fog.color.copy(tmpColor);
-    _renderer.setClearColor(tmpColor.getHex());
 
     _initAnimation = Math.min(_initAnimation + dt * 0.00025, 1);
     simulator.initAnimation = _initAnimation;
