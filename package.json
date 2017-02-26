@@ -6,7 +6,6 @@
   "main": "index.js",
   "dependencies": {
     "computed-style": "0.3.0",
-    "dat-gui": "0.5.0",
     "dom-css": "^1.1.1",
     "gl-matrix": "^2.3.1",
     "glsl-random": "^0.0.5",
