@@ -33,11 +33,11 @@ exports.dieSpeed = 0.015;
 exports.radius = amountInfo[2];
 exports.curlSize = 0.02;
 exports.attraction = 1;
-exports.shadowDarkness = 0.45;
+exports.shadowDarkness = 0.3;
 
-exports.bgColor = '#343434';
-exports.color1 = '#ffffff';
-exports.color2 = '#ffffff';
+exports.bgColor = '#ffffff';
+exports.color1 = '#4ae2a5';
+exports.color2 = '#ffcb0c';
 
 exports.fxaa = false;
 var motionBlurQualityMap = exports.motionBlurQualityMap = {
