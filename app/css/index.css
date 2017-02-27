@@ -1,4 +1,5 @@
 html, body {
+    background: #fde6ee;
     font-family: font-family: 'Nunito', sans-serif;
     height: 100%;
 }
@@ -27,4 +28,9 @@ html, body {
 .icon-container a {
     color: #f10e57;
     padding-right: 8px;
+    transition: color 0.3s ease;
+}
+
+.icon-container a:hover {
+    color: #900834;
 }
