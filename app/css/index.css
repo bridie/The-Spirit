@@ -1,53 +1,30 @@
-html {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    font-family: 'Oxygen', sans-serif;
-    background-color: #343434;
-}
-
-body {
-    position: relative;
-    width: 100%;
+html, body {
+    font-family: font-family: 'Nunito', sans-serif;
     height: 100%;
 }
 
-html, body,
-.mobile, .mobile *,
-.loader {
-    box-sizing: border-box;
-}
-.dg .c .selector {
-    transform: translate(0, -1px);
-}
-
-.mobile {
-    display: none;
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    margin-left: 10%;
     position: absolute;
-    width: 100%;
-    top: 50%;
-    padding: 0 30px;
-
-    font-size: 14px;
-    color: #fff;
-
-    transform: translate3d(0, -50%, 0);
 }
 
-.mobile span {
-    color: #ccc;
-    text-decoration: underline;
+.welcome {
+    color: #f10e57;
+    font-size: 54px;
+    margin: 0;
 }
 
-.mobile a {
-    color: #ccc;
+.icon-container {
+    padding-left: 3px;
+    font-size: 20px;
 }
 
-html.is-mobile, html.is-mobile {
-    font-size: 11px;
-}
-
-.credit {
-    float: left;
+.icon-container a {
+    color: #f10e57;
+    padding-right: 8px;
 }
