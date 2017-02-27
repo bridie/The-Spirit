@@ -35,7 +35,7 @@ exports.curlSize = 0.02;
 exports.attraction = 1;
 exports.shadowDarkness = 0.3;
 
-exports.bgColor = '#fde6ee';
+exports.bgColor = '#ffffff';
 exports.color1 = '#4ae2a5';
 exports.color2 = '#ffcb0c';
 
